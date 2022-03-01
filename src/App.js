@@ -12,7 +12,7 @@ export default function App() {
         <br />
         <br />
         <Routes>
-          <Route path="/index.html" element={Home} />
+          <Route path="/index.html" element={<Home />} />
           <Route path="/" element={<Home />} />
 
 
