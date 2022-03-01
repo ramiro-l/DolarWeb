@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/DolarHoyArg/static/js/main.307b02fb.js",
+    "main.js": "/DolarHoyArg/static/js/main.dbcbb200.js",
     "index.html": "/DolarHoyArg/index.html",
-    "main.307b02fb.js.map": "/DolarHoyArg/static/js/main.307b02fb.js.map"
+    "main.dbcbb200.js.map": "/DolarHoyArg/static/js/main.dbcbb200.js.map"
   },
   "entrypoints": [
-    "static/js/main.307b02fb.js"
+    "static/js/main.dbcbb200.js"
   ]
 }
