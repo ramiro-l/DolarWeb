@@ -15,41 +15,46 @@ class Conversor extends React.Component {
 
 
     handleChangePesos(event) {
-        if (event.target.value === '') {
-            this.setState({ dolaresBlue: event.target.value});
-            this.setState({ dolaresOficial: event.target.value});
-            this.setState({ dolaresMep: event.target.value});
-            this.setState({ pesosBlue: event.target.value });
-            this.setState({ pesosOficial: event.target.value });
-            this.setState({ pesosMep: event.target.value });
-        } else {
-            this.setState({ pesosBlue: event.target.value });
-            this.setState({ pesosOficial: event.target.value });
-            this.setState({ pesosMep: event.target.value });
+        if (event.target.value === '0' || event.target.value === '1' || event.target.value === '2' || event.target.value === '3' || event.target.value === '4' || event.target.value === '5' || event.target.value === '6' || event.target.value === '7' || event.target.value === '8' || event.target.value === '9') {
+            if (event.target.value === '') {
+                this.setState({ dolaresBlue: event.target.value });
+                this.setState({ dolaresOficial: event.target.value });
+                this.setState({ dolaresMep: event.target.value });
+                this.setState({ pesosBlue: event.target.value });
+                this.setState({ pesosOficial: event.target.value });
+                this.setState({ pesosMep: event.target.value });
+            } else {
+                this.setState({ pesosBlue: event.target.value });
+                this.setState({ pesosOficial: event.target.value });
+                this.setState({ pesosMep: event.target.value });
 
-            this.setState({ dolaresBlue: (parseInt(event.target.value) / parseInt(this.props.todos.precioBlue)).toFixed(2) });
-            this.setState({ dolaresOficial: (parseInt(event.target.value) / parseInt(this.props.todos.precioOficial)).toFixed(2) });
-            this.setState({ dolaresMep: (parseInt(event.target.value) / parseInt(this.props.todos.precioMep)).toFixed(2) });
+                this.setState({ dolaresBlue: (parseInt(event.target.value) / parseInt(this.props.todos.precioBlue)).toFixed(2) });
+                this.setState({ dolaresOficial: (parseInt(event.target.value) / parseInt(this.props.todos.precioOficial)).toFixed(2) });
+                this.setState({ dolaresMep: (parseInt(event.target.value) / parseInt(this.props.todos.precioMep)).toFixed(2) });
+            }
         }
+
 
     }
 
     handleChangeDolares(event) {
-        if (event.target.value === '') {
-            this.setState({ dolaresBlue: event.target.value});
-            this.setState({ dolaresOficial: event.target.value});
-            this.setState({ dolaresMep: event.target.value});
-            this.setState({ pesosBlue: event.target.value });
-            this.setState({ pesosOficial: event.target.value });
-            this.setState({ pesosMep: event.target.value });
-        } else {
-            this.setState({ dolaresBlue: event.target.value});
-            this.setState({ dolaresOficial: event.target.value});
-            this.setState({ dolaresMep: event.target.value});
-            
-            this.setState({ pesosBlue: (parseInt(event.target.value) * parseInt(this.props.todos.precioBlue)).toFixed(2) });
-            this.setState({ pesosOficial: (parseInt(event.target.value) * parseInt(this.props.todos.precioOficial)).toFixed(2) });
-            this.setState({ pesosMep: (parseInt(event.target.value) * parseInt(this.props.todos.precioMep)).toFixed(2) });
+        if (event.target.value === '0' || event.target.value === '1' || event.target.value === '2' || event.target.value === '3' || event.target.value === '4' || event.target.value === '5' || event.target.value === '6' || event.target.value === '7' || event.target.value === '8' || event.target.value === '9') {
+            if (event.target.value === '') {
+                this.setState({ dolaresBlue: event.target.value });
+                this.setState({ dolaresOficial: event.target.value });
+                this.setState({ dolaresMep: event.target.value });
+                this.setState({ pesosBlue: event.target.value });
+                this.setState({ pesosOficial: event.target.value });
+                this.setState({ pesosMep: event.target.value });
+            } else {
+                this.setState({ dolaresBlue: event.target.value });
+                this.setState({ dolaresOficial: event.target.value });
+                this.setState({ dolaresMep: event.target.value });
+
+                this.setState({ pesosBlue: (parseInt(event.target.value) * parseInt(this.props.todos.precioBlue)).toFixed(2) });
+                this.setState({ pesosOficial: (parseInt(event.target.value) * parseInt(this.props.todos.precioOficial)).toFixed(2) });
+                this.setState({ pesosMep: (parseInt(event.target.value) * parseInt(this.props.todos.precioMep)).toFixed(2) });
+            }
         }
     }
 
@@ -57,9 +62,9 @@ class Conversor extends React.Component {
     render() {
 
         let color;
-        let inputBlue = { display : 'none'}
-        let inputOficial = { display : 'none'}
-        let inputMep = { display : 'none'}
+        let inputBlue = { display: 'none' }
+        let inputOficial = { display: 'none' }
+        let inputMep = { display: 'none' }
         if (this.props.tipo === 'Blue') {
             color = 'card-header mb-4 text-uppercase bg-primary text-white rounded';
             inputBlue = {}
