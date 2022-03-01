@@ -55,20 +55,20 @@ export default function Home(params) {
 
                     <Precios text='Blue' tipo='Blue' compra={dolarBlue.compra} venta={dolarBlue.venta} />
                     <button type="button" class="btn btn-light mt-2">
-                        <Link className="nav-link text-center m-1 text-body text-uppercase" to="/blue">Click para ver más</Link>
+                        <Link className="nav-link text-center m-1 text-body text-uppercase" to="/blue#precio">Click para ver más</Link>
                     </button>
 
                 </div>
                 <div className="col-md m-2 row justify-content-center">
                     <Precios text='Oficial' tipo='Oficial' compra={dolarOficial.compra} venta={dolarOficial.venta} />
                     <button type="button" class="btn btn-light mt-2">
-                        <Link className="nav-link text-center m-1 text-body text-uppercase" to="/oficial">Click para ver más</Link>
+                        <Link className="nav-link text-center m-1 text-body text-uppercase" to="/oficial#precio">Click para ver más</Link>
                     </button>
                 </div>
                 <div className="col-md m-2 row justify-content-center">
                     <Precios text='MEP' tipo='MEP' compra={dolarMep.compra} venta={dolarMep.venta} />
                     <button type="button" class="btn btn-light mt-2">
-                        <Link className="nav-link text-center m-1 text-body text-uppercase" to="/mep">Click para ver más</Link>
+                        <Link className="nav-link text-center m-1 text-body text-uppercase" to="/mep#precio">Click para ver más</Link>
                     </button>
                 </div>
             </div>
