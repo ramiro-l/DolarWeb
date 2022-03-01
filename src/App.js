@@ -12,6 +12,7 @@ export default function App() {
         <br />
         <br />
         <Routes>
+          <Route path="/index.html" element={Home} />
           <Route path="/" element={<Home />} />
 
 
@@ -39,9 +40,9 @@ function Footer() {
   return (
     <div>
       <br />
-      
+
       <footer className="text-center text-white border-top">
-        
+
         <div className="container pt-4">
 
           <section className="mb-4">
