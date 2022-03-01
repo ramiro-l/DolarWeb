@@ -39,7 +39,7 @@ class Navbar extends React.Component {
 
                     <Link className="navbar-brand" to="/" onClick={() => this.clickLinkButton()}>
                         <img
-                            src="%PUBLIC_URL%/Logo.png"
+                            src="Logo.png"
                             height="30"
                             alt="Dolar Hoy Arg Logo"
                             loading="lazy"
