@@ -40,12 +40,17 @@ export default function Home(params) {
     // El segundo parametro es un [] y evita un loop infinito
     useEffect(() => {
         getDolar()
+        window.scroll({
+            top: 0,
+            left: 0,
+            behavior: 'smooth'
+        });
     }, [])
 
     return (
         <div className="container">
             <hr className="mt-4 " ></hr>
-            <h1 class="display-3 text-center">Dola Hoy Arg</h1>
+            <h1 class="display-3 text-center">DOLAR HOY ARG</h1>
             <hr />
             <p class="text-center"> La cotización del Dólar Oficial minuto a minuto. Mantenete informado para tomar las mejores decisiones de inversión.</p>
             <hr />
@@ -55,20 +60,20 @@ export default function Home(params) {
 
                     <Precios text='Blue' tipo='Blue' compra={dolarBlue.compra} venta={dolarBlue.venta} />
                     <button type="button" class="btn btn-light mt-2">
-                        <Link className="nav-link text-center m-1 text-body text-uppercase" to="blue#precio">Click para ver más</Link>
+                        <Link className="nav-link text-center m-1 text-body text-uppercase" to="/blue">Click para ver más</Link>
                     </button>
 
                 </div>
                 <div className="col-md m-2 row justify-content-center">
                     <Precios text='Oficial' tipo='Oficial' compra={dolarOficial.compra} venta={dolarOficial.venta} />
                     <button type="button" class="btn btn-light mt-2">
-                        <Link className="nav-link text-center m-1 text-body text-uppercase" to="/oficial#precio">Click para ver más</Link>
+                        <Link className="nav-link text-center m-1 text-body text-uppercase" to="/oficial">Click para ver más</Link>
                     </button>
                 </div>
                 <div className="col-md m-2 row justify-content-center">
                     <Precios text='MEP' tipo='MEP' compra={dolarMep.compra} venta={dolarMep.venta} />
                     <button type="button" class="btn btn-light mt-2">
-                        <Link className="nav-link text-center m-1 text-body text-uppercase" to="/mep#precio">Click para ver más</Link>
+                        <Link className="nav-link text-center m-1 text-body text-uppercase" to="/mep">Click para ver más</Link>
                     </button>
                 </div>
             </div>

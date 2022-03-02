@@ -3,6 +3,7 @@ import React from "react";
 
 
 
+
 class Navbar extends React.Component {
 
     clickNavBarButton() {
@@ -21,11 +22,16 @@ class Navbar extends React.Component {
 
     }
 
-    clickLinkButton() {
+    clickLinkButton(tipo) {
 
         const menu = document.getElementById('navbarSupportedContent');
-        menu.classList.remove('show');
-        this.clickNavBarButton()
+
+        if (menu.classList.value === 'navbar-collapse collapse show') {
+            menu.classList.remove('show');
+            this.clickNavBarButton()
+        }
+
+
     }
 
 
@@ -36,7 +42,7 @@ class Navbar extends React.Component {
 
                 <div className="container-fluid container">
 
-                    <Link className="navbar-brand" to="/" onClick={() => this.clickLinkButton()}>
+                    <Link className="navbar-brand" to="/" onClick={() => this.clickLinkButton('home')}>
                         <img
                             src="Logo.png"
                             height="30"
@@ -66,16 +72,16 @@ class Navbar extends React.Component {
 
                                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <li>
-                                        <Link className="nav-link  m-1" to="/blue#precio" onClick={() => this.clickLinkButton()}>Precio</Link>
+                                        <Link className="nav-link  m-1" to="/blue/precio" onClick={() => this.clickLinkButton('blue')}>Precio</Link>
                                     </li>
                                     <li>
-                                        <Link className="nav-link  m-1" to="/blue#info" onClick={() => this.clickLinkButton()}>Información</Link>
+                                        <Link className="nav-link  m-1" to="/blue/info" onClick={() => this.clickLinkButton('blue')}>Información</Link>
                                     </li>
                                     <li>
                                         <hr className="dropdown-divider " />
                                     </li>
                                     <li>
-                                        <Link className="nav-link  m-1" to="/blue#conversor" onClick={() => this.clickLinkButton()}>Conversor</Link>
+                                        <Link className="nav-link  m-1" to="/blue/conversor" onClick={() => this.clickLinkButton('blue')}>Conversor</Link>
                                     </li>
                                 </ul>
                             </li>
@@ -87,16 +93,16 @@ class Navbar extends React.Component {
 
                                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <li>
-                                        <Link className="nav-link  m-1" exact to='/oficial#precio' onClick={() => this.clickLinkButton()}>Precio</Link>
+                                        <Link className="nav-link  m-1" exact to='/oficial/precio' onClick={() => this.clickLinkButton("oficial")}>Precio</Link>
                                     </li>
                                     <li>
-                                        <Link className="nav-link  m-1" to="/oficial#info" onClick={() => this.clickLinkButton()}>Información</Link>
+                                        <Link className="nav-link  m-1" to="/oficial/info" onClick={() => this.clickLinkButton("oficial")}>Información</Link>
                                     </li>
                                     <li>
                                         <hr className="dropdown-divider" />
                                     </li>
                                     <li>
-                                        <Link className="nav-link  m-1" to="/oficial#conversor" onClick={() => this.clickLinkButton()}>Conversor</Link>
+                                        <Link className="nav-link  m-1" to="/oficial/conversor" onClick={() => this.clickLinkButton("oficial")}>Conversor</Link>
                                     </li>
                                 </ul>
                             </li>
@@ -108,16 +114,16 @@ class Navbar extends React.Component {
 
                                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <li>
-                                        <Link className="nav-link  m-1" to='/mep#precio' onClick={() => this.clickLinkButton()}>Precio</Link>
+                                        <Link className="nav-link  m-1" to='/mep/precio' onClick={() => this.clickLinkButton("mep")}>Precio</Link>
                                     </li>
                                     <li>
-                                        <Link className="nav-link  m-1" to="/mep#info" onClick={() => this.clickLinkButton()}>Información</Link>
+                                        <Link className="nav-link  m-1" to="/mep/info" onClick={() => this.clickLinkButton("mep")}>Información</Link>
                                     </li>
                                     <li>
                                         <hr className="dropdown-divider" />
                                     </li>
                                     <li>
-                                        <Link className="nav-link  m-1" to="/mep#conversor" onClick={() => this.clickLinkButton()}>Conversor</Link>
+                                        <Link className="nav-link  m-1" to="/mep/conversor" onClick={() => this.clickLinkButton("mep")}>Conversor</Link>
                                     </li>
                                 </ul>
                             </li>
