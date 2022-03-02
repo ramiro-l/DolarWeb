@@ -56,7 +56,7 @@ export default function Home(params) {
 
                     <Precios text='Blue' tipo='Blue' compra={dolarBlue.compra} venta={dolarBlue.venta} />
                     <button type="button" class="btn btn-light mt-2">
-                        <Link className="nav-link text-center m-1 text-body text-uppercase" to="/blue#precio">Click para ver más</Link>
+                        <Link className="nav-link text-center m-1 text-body text-uppercase" to="/blue">Click para ver más</Link>
                     </button>
 
                 </div>
