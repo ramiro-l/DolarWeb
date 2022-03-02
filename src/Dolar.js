@@ -71,7 +71,7 @@ export default function Dolar(params) {
                     La cotización del<b> Dólar {params.tipo}</b> minuto a minuto. Mantenete informado para tomar las mejores decisiones de inversión.
                 </p>
             </div>
-            <div className='row p-4 pt-0 pb-0 m-0' id="buttonsLiks" style={{ width: '100vw', zIndex: '1' }}>
+            <div className='row p-2 pt-0 pb-0 m-0' id="buttonsLiks" style={{ width: '100vw', zIndex: '1' }}>
                 <button className='m-2 mt-3 col text-center text-body btn btn-ligh btn-sm bg-white' onClick={() => moverse('precio')}><small>PRECIO</small></button>
                 <button className='m-2 mt-3 col text-center text-body btn btn-ligh btn-sm bg-white' onClick={() => moverse('conversor')}><small>CONVERSOR</small></button>
                 <button className='m-2 mt-3 col text-center text-body btn btn-ligh btn-sm bg-white' onClick={() => moverse('info')}><small>INFORMACIÓN</small></button>
