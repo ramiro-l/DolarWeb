@@ -16,11 +16,11 @@ export default function App() {
 
 
 
-          <Route path="blue" element={<Dolar tipo='Blue' />} />
+          <Route path="/blue" element={<Dolar tipo='Blue' />} />
 
-          <Route path="oficial" element={<Dolar tipo='Oficial' />} />
+          <Route path="/oficial" element={<Dolar tipo='Oficial' />} />
 
-          <Route path="mep" element={<Dolar tipo='MEP' />} />
+          <Route path="/mep" element={<Dolar tipo='MEP' />} />
 
 
 
