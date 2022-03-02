@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { HashLink } from 'react-router-hash-link';
 import React from "react";
 
 
@@ -67,16 +66,16 @@ class Navbar extends React.Component {
 
                                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <li>
-                                        <HashLink className="nav-link  m-1" to="/blue#precio" onClick={() => this.clickLinkButton()}>Precio</HashLink>
+                                        <Link className="nav-link  m-1" to="/blue#precio" onClick={() => this.clickLinkButton()}>Precio</Link>
                                     </li>
                                     <li>
-                                        <HashLink className="nav-link  m-1" to="/blue#info" onClick={() => this.clickLinkButton()}>Información</HashLink>
+                                        <Link className="nav-link  m-1" to="/blue#info" onClick={() => this.clickLinkButton()}>Información</Link>
                                     </li>
                                     <li>
                                         <hr className="dropdown-divider " />
                                     </li>
                                     <li>
-                                        <HashLink className="nav-link  m-1" to="/blue#conversor" onClick={() => this.clickLinkButton()}>Conversor</HashLink>
+                                        <Link className="nav-link  m-1" to="/blue#conversor" onClick={() => this.clickLinkButton()}>Conversor</Link>
                                     </li>
                                 </ul>
                             </li>
@@ -88,16 +87,16 @@ class Navbar extends React.Component {
 
                                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <li>
-                                        <HashLink className="nav-link  m-1" exact to='/oficial#precio' onClick={() => this.clickLinkButton()}>Precio</HashLink>
+                                        <Link className="nav-link  m-1" exact to='/oficial#precio' onClick={() => this.clickLinkButton()}>Precio</Link>
                                     </li>
                                     <li>
-                                        <HashLink className="nav-link  m-1" to="/oficial#info" onClick={() => this.clickLinkButton()}>Información</HashLink>
+                                        <Link className="nav-link  m-1" to="/oficial#info" onClick={() => this.clickLinkButton()}>Información</Link>
                                     </li>
                                     <li>
                                         <hr className="dropdown-divider" />
                                     </li>
                                     <li>
-                                        <HashLink className="nav-link  m-1" to="/oficial#conversor" onClick={() => this.clickLinkButton()}>Conversor</HashLink>
+                                        <Link className="nav-link  m-1" to="/oficial#conversor" onClick={() => this.clickLinkButton()}>Conversor</Link>
                                     </li>
                                 </ul>
                             </li>
@@ -109,16 +108,16 @@ class Navbar extends React.Component {
 
                                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <li>
-                                        <HashLink className="nav-link  m-1" to='/mep#precio' onClick={() => this.clickLinkButton()}>Precio</HashLink>
+                                        <Link className="nav-link  m-1" to='/mep#precio' onClick={() => this.clickLinkButton()}>Precio</Link>
                                     </li>
                                     <li>
-                                        <HashLink className="nav-link  m-1" to="/mep#info" onClick={() => this.clickLinkButton()}>Información</HashLink>
+                                        <Link className="nav-link  m-1" to="/mep#info" onClick={() => this.clickLinkButton()}>Información</Link>
                                     </li>
                                     <li>
                                         <hr className="dropdown-divider" />
                                     </li>
                                     <li>
-                                        <HashLink className="nav-link  m-1" to="/mep#conversor" onClick={() => this.clickLinkButton()}>Conversor</HashLink>
+                                        <Link className="nav-link  m-1" to="/mep#conversor" onClick={() => this.clickLinkButton()}>Conversor</Link>
                                     </li>
                                 </ul>
                             </li>
