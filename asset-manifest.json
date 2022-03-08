@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.js": "/DolarHoyArg/static/js/main.eab4eead.js",
-    "index.html": "/DolarHoyArg/index.html",
-    "main.eab4eead.js.map": "/DolarHoyArg/static/js/main.eab4eead.js.map"
+    "main.js": "/DolarWeb/static/js/main.eab4eead.js",
+    "index.html": "/DolarWeb/index.html",
+    "main.eab4eead.js.map": "/DolarWeb/static/js/main.eab4eead.js.map"
   },
   "entrypoints": [
     "static/js/main.eab4eead.js"
