@@ -1,11 +1,10 @@
 {
   "files": {
-    "main.js": "/DolarWeb/static/js/main.25020e3e.js",
-    "static/media/favicon.ico": "/DolarWeb/static/media/favicon.914fbbb4610b8d00576b.ico",
+    "main.js": "/DolarWeb/static/js/main.6a5cf8f4.js",
     "index.html": "/DolarWeb/index.html",
-    "main.25020e3e.js.map": "/DolarWeb/static/js/main.25020e3e.js.map"
+    "main.6a5cf8f4.js.map": "/DolarWeb/static/js/main.6a5cf8f4.js.map"
   },
   "entrypoints": [
-    "static/js/main.25020e3e.js"
+    "static/js/main.6a5cf8f4.js"
   ]
 }
