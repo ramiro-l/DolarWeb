@@ -3,6 +3,8 @@ import Dolar from "./Dolar";
 import Navbar from "./NavBar";
 import Home from './Home'
 
+import favicon from './imgAndIcons/favicon.ico';
+
 export default function App() {
   return (
     <Router>
