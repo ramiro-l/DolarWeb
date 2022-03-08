@@ -39,7 +39,6 @@ class Navbar extends React.Component {
     render() {
         return (
             <nav className="fixed-top navbar navbar-expand-lg bg-light navbar-light ">
-                <img src={process.env.PUBLIC_URL + '/favicon16x16.png'} alt="logo" />
 
                 <div className="container-fluid container">
 
