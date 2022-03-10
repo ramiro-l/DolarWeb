@@ -39,11 +39,8 @@ class Navbar extends React.Component {
     render() {
         return (
             <nav className="fixed-top navbar navbar-expand-lg bg-light navbar-light ">
-                <header>
-                    <link rel="icon" type="image/png" sizes="32x32" href="/favicon32x32.png"></link>
-                    <link rel="icon" type="image/png" sizes="16x16" href="/favicon16x16.png"></link>
-                    <link rel="icon" href="/favicon.ico"></link>
-                </header>
+                <img src="/DolarWeb/favicon16x16.png" className="d-none"/>
+                <img src="/DolarWeb/favicon32x32.png" className="d-none"/>
                 <div className="container-fluid container">
 
                     <Link className="navbar-brand" to="/" onClick={() => this.clickLinkButton('home')}>
