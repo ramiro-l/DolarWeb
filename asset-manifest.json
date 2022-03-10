@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/DolarWeb/static/js/main.eab4eead.js",
+    "main.js": "/DolarWeb/static/js/main.b6a32df4.js",
     "index.html": "/DolarWeb/index.html",
-    "main.eab4eead.js.map": "/DolarWeb/static/js/main.eab4eead.js.map"
+    "main.b6a32df4.js.map": "/DolarWeb/static/js/main.b6a32df4.js.map"
   },
   "entrypoints": [
-    "static/js/main.eab4eead.js"
+    "static/js/main.b6a32df4.js"
   ]
 }
