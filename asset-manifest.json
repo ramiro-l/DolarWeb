@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.js": "/DolarWeb/static/js/main.000d5b79.js",
-    "index.html": "/DolarWeb/index.html",
-    "main.000d5b79.js.map": "/DolarWeb/static/js/main.000d5b79.js.map"
+    "main.js": "/static/js/main.000d5b79.js",
+    "index.html": "/index.html",
+    "main.000d5b79.js.map": "/static/js/main.000d5b79.js.map"
   },
   "entrypoints": [
     "static/js/main.000d5b79.js"
