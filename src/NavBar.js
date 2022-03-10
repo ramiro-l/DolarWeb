@@ -40,6 +40,8 @@ class Navbar extends React.Component {
         return (
             <nav className="fixed-top navbar navbar-expand-lg bg-light navbar-light ">
 
+                <img src="/favicon.ico" className="d-none none"></img>
+
                 <div className="container-fluid container">
 
                     <Link className="navbar-brand" to="/" onClick={() => this.clickLinkButton('home')}>
