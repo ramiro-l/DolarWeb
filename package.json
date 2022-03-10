@@ -2,7 +2,7 @@
   "name": "dolar-web",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://dolarhoyarg.ml",
+  "homepage": "https://ramiro-l.github.io/DolarWeb",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.3",
@@ -16,7 +16,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "predeploy":"npm run build && echo dolarhoyarg.ml > ./build/CNAME",
+    "predeploy":"npm run build",
     "deploy":"gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
