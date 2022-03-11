@@ -47,7 +47,7 @@ class Navbar extends React.Component {
                         <img
                             src="Logo.png"
                             height="30"
-                            alt="Dolar Hoy Arg Logo"
+                            alt="logo"
                             loading="lazy"
                         />
                         <small>DolarHoyArg</small>
